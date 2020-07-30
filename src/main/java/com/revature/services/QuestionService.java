@@ -102,8 +102,8 @@ public class QuestionService {
 	}
 	
   /** @Author Natasha Poser */ 
-	public Page <Question> getQuestionById(Pageable pageable, int id) {
-		return questionRepository.getQuestionById(pageable, id);
+	public Question getQuestionById( int id) {
+		return questionRepository.getQuestionById(id);
 	}
 
 	/**@author ken*/

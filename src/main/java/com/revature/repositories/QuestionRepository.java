@@ -19,6 +19,6 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 	Page<Question> getQuestionsByStatus(Pageable pageable, boolean status);
 	
 	/** @author Natasha Poser */
-	Page<Question> getQuestionById(Pageable pageable, int id);
+	Question getQuestionById(int id);
 	
 }

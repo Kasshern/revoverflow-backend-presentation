@@ -62,8 +62,8 @@ public class AnswerController {
 	
 	/** @author Natasha Poser */
 	@GetMapping("/id/{id}")
-	public Page<Answer> getAnswerById(Pageable pageable, @PathVariable int id){
-		return answerService.getAnswerById(pageable, id);
+	public Answer getAnswerById( @PathVariable int id){
+		return answerService.getAnswerById(id);
 	}
 }
  
